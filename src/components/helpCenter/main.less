@@ -1,0 +1,86 @@
+@import "../../css/var.less";
+.helpCenter{
+  .telphone-bd{
+    height: 15rem;
+    color: rgba(255,255,255,0.8);
+    .background();
+    text-align: center;
+    a{
+      color: @fff;
+    }
+    .phone-image{
+      height: 10rem;
+      background: url("../../images/phonex.png") center center no-repeat;
+      text-align: center;
+      background-size: auto 90%;
+    }
+    .phone-text{
+      font-style: italic;
+      font-size: 2rem;
+      margin-top: .5rem;
+    }
+  }
+  .contact-me{
+    overflow: hidden;
+    background: @fff;
+    display: flex;
+    padding: 1rem 0;
+    position: relative;
+    .line{
+      position: absolute;
+      width: 0;
+      height: 75%;
+      border-left:1px solid  @border-eb;
+      top: 12.5%;
+      left: 50%;
+    }
+    a{
+      flex: 1;
+      margin: 0 2rem;
+      text-decoration: none;
+      dt{
+        width: 35%;
+        box-sizing: border-box;
+        float: left;
+        padding: .85rem;
+      }
+      dd{
+        margin-left: 35%;
+        text-align: center;
+        padding-top: .2em;
+        color: @c-6;
+        line-height: 1.5em;
+        padding-right: 1rem;
+      }
+    }
+  }
+  .link-bd{
+    display: flex;
+    flex-wrap: wrap;
+    background: @fff;
+    a{
+      color: @c-6;
+    }
+    dl{
+      width: 33.3%;
+      text-align: center;
+      color: @c-6;
+      background:@fff;
+      box-sizing: border-box;
+      border-top: 1px solid @ed;
+      border-right: 1px solid @ed;
+      height: 9rem;
+      &:nth-child(3n){
+        border-right: 0;
+      }
+      dt{
+        width: 40%;
+        height: 50%;
+        margin: 10% auto 1rem;
+        background: no-repeat center center;
+        background-size: 60%;
+      }
+    }
+
+  }
+}

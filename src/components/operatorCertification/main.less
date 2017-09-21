@@ -1,0 +1,54 @@
+@import "../../css/var.less";
+.opc{
+  .hd{
+    line-height: 4rem;
+    border-bottom: 1px solid @border-eb;
+    padding: 0 0 0 4rem;
+    background: @fff url(../../images/qes.png) 1.5rem center no-repeat;
+    background-size: auto 40%;
+    font-size: 1.6rem;
+  }
+  .bd{
+    margin-bottom: 2rem;
+    background: @fff;
+    padding: 1.5rem 1rem;
+    line-height: 1.8em;
+    p{
+      color: @c-6;
+    }
+    dl{
+        border:2px dashed @border-eb;
+        margin-left: 60px;
+        position: relative;
+        border-radius: 6px;
+        padding: .5rem 1rem;
+        margin-bottom: 1.5rem;
+          dt{
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background: url(../../images/mima.png) center center no-repeat;
+          background-size: contain;
+          left: -60px;
+          top: 0;
+          &.phone-icon{
+            background-image: url(../../images/shoujihaoma.png);
+          }
+        }
+        dd{
+          overflow: hidden;
+          margin-bottom: .3rem;
+          word-break: keep-all ;
+          label{
+            width: 4em;
+            float: left;
+            color: @c-6;
+          }
+          p{
+            margin-left: 4em;
+            color: @c-9;
+          }
+        }
+      }
+    }
+}

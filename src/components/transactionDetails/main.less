@@ -1,0 +1,36 @@
+@import "../../css/var.less";
+.transctionDetails{
+  .cantainer{
+    padding-top: 1.5rem;
+    .mint-loadmore{
+      height: 100%;
+      overflow-y: auto;
+    }
+    .detail-item{
+      background: @fff;
+      border-top: 1px solid @border-eb;
+      border-bottom: 1px solid @border-eb;
+      padding: 1rem 1.5rem;
+      margin-top: -1px;
+      position: relative;
+      line-height: 2rem;
+      dt{
+        position: absolute;
+        line-height: 4rem;
+        right: 1.5rem;
+        top: 1rem;
+        .pos{
+          color: @yellor;
+        }
+        .neg{
+          color: @green;
+        }
+      }
+      dd{
+        &.time{
+          color: @c-9;
+        }
+      }
+    }
+  }
+}

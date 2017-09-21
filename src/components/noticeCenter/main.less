@@ -1,0 +1,81 @@
+@import "../../css/var.less";
+.mesCenter{
+  .cantainer{
+    .tabNav{
+      .background();
+      padding: .5rem 10% 1.5rem;
+      dl{
+          background: rgba(255,255, 255, 0.3);
+          line-height: 3rem;
+          border-radius: 100rem;
+          display: flex;
+          font-size: 1.6rem;
+          &>dd,&>a{
+          flex: 1;
+          text-align: center;
+          color: @fff;
+          em{
+            display: inline-block;
+            position: absolute;
+            top: 1em;
+            padding: 0 5px;
+            margin-left: .5rem;
+            background: @red;
+            color: @fff;
+            line-height: 1.5em;
+            font-size: 1.2rem;
+            border-radius:10rem; 
+          }
+          &.active{
+            background: @fff;
+            color:@c-blue1;
+            flex:1.1;
+            border-radius: 100rem;
+          }
+        }
+      }
+    }
+    .list-wrapper{
+      position: absolute;
+      bottom: 0;
+      top: 5rem;
+      width: 100%;
+      overflow-y: auto;
+      overflow-x:hidden;
+    }
+    .empty{
+      padding-top: 40%;
+    }
+    .list-item{
+      background: @fff;
+      border-top: 1px solid @border-eb;
+      border-bottom: 1px solid @border-eb;
+      padding: .5rem 1rem;
+      margin-top: 1rem;
+      line-height: 2.2em;
+      color: @c-6;
+      &.disabled{
+        color: @c-9;
+        .type{
+          color: @c-9;
+        }
+      }
+      dt{
+        .texthidden();
+        .fr{
+          float: right;
+          color: @c-9;
+        }
+        .type{
+          font-size: 1.6rem;
+          color: @c-3;
+        }
+      }
+      dd{
+        border-top: @border-eb;
+        color: @c-9;
+      }
+    }
+
+  }
+}

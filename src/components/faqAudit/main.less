@@ -1,0 +1,43 @@
+@import "../../css/var.less";
+.faqAudit{
+  .cantainer{
+    background: @fff;
+    .faq-wp{
+      margin: 1rem 1rem 0;
+      border-bottom: 1px solid @border-eb;
+      color: @c-6;
+      .hd{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding: 1rem 0;
+        .index{
+          color: @c-blue1;
+          margin-right: 1rem;
+        }
+      }
+      .bd{
+        padding: 1rem;
+        margin-bottom: .8rem;
+        background: @bg-f4;
+        line-height: 1.8em;
+        border-radius: 6px;
+        position: relative;
+        display: none;
+        &.active{
+          display: block;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border: 8px solid transparent;
+          border-bottom-color: @bg-f4;
+          left: 4em;
+          top: -16px;
+        }
+      }
+    }
+  }
+
+}
