@@ -5,9 +5,9 @@
             <div class="faq-wp" v-for="(item,index) in faqData">
                 <p class="hd" @click="tabChange(item)"><span class="index">{{index+1}}</span>{{item.title}}</p>
                 <p :class="{ active: item.isShow,bd:true }">{{item.bd}}</p>
+
             </div>
         </div>
-
     </div>
 </template>
 
